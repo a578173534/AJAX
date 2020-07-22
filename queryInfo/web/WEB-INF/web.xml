@@ -3,4 +3,22 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <!--声明servlet-->
+    <servlet>
+        <servlet-name>QueryProvinceServlet</servlet-name>
+        <servlet-class>com.ggs.controller.QueryProvinceServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>QueryJsonServlet</servlet-name>
+        <servlet-class>com.ggs.controller.QueryJsonServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>QueryJsonServlet</servlet-name>
+        <url-pattern>/queryjson</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>QueryProvinceServlet</servlet-name>
+        <url-pattern>/queryProvince</url-pattern>
+    </servlet-mapping>
 </web-app>
